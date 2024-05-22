@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fbfaf6;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .score-container {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #a1a19f;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grid-cell {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: rgba(189, 189, 189, 0.35);
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .tile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8bdbd;
+    border-radius: 5px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #776e65;
+    transition: transform 0.1s, background-color 0.1s;
+  }
+  
+  /* Add styles for different tile values */
+  .tile[data-value="2"] { background-color: #e1e0de; }
+  .tile[data-value="4"] { background-color: #c8c363; }
+  .tile[data-value="8"] { background-color: #ffb522; }
+  .tile[data-value="16"] { background-color: #e0c594; }
+  .tile[data-value="36"] { background-color: #e7d0a6; }
+  .tile[data-value="64"] { background-color: #db884d; }
+  .tile[data-value="128"] { background-color: #e4a020; }
+  .tile[data-value="256"] { background-color: #eaa80d; }
+  .tile[data-value="512"] { background-color: #f6b63e; }
+  .tile[data-value="1024"] { background-color: #c36635; }
+  .tile[data-value="2048"] { background-color: #f77b2d; }
+
+
+
+
+
+
+  /* Continue for other values... */
+  
